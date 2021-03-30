@@ -1,0 +1,83 @@
+:root {
+    --h1-title-color: black;
+    --h4-title-color: blueviolet;
+    --main-text-color: darkgrey;
+    /*--button-submit-color: ;*/
+}
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+header {
+    display: block;
+    padding: 1rem;
+}
+header h4 {
+    width: 50%;
+    margin-left:  auto;
+    margin-right: auto;
+    font-family: Helvetica, Arial, sans-serif;
+    color: var(--h4-title-color);
+    text-align: center;
+}
+header h1 {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--h1-title-color);
+    text-align: center;
+}
+header p {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--main-text-color);
+    text-align: center;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intro {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem;
+    color: var(--main-text-color);
+    padding: 1rem;
+    text-align: center;
+}
+.intro p {
+    margin-bottom: 1rem;
+}
+.intro button {
+    background-color:var(--h4-title-color);
+    color: aliceblue;
+    padding: 1rem;
+    border-radius: 0.8rem;
+}
+.pics {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.pics figure {
+    width: 32rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pics figure img {
+    width: 100%;
+    min-height: 5rem;
+    height: auto;
+    background-color: lightgray;
+}
