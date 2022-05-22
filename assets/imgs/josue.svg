@@ -1,0 +1,5 @@
+<!-- Una imagen svg con un cuadro blanco y una línea roja. -->
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" fill="white" />
+  <line x1="0" y1="0" x2="100" y2="100" stroke="red" />
+</svg>
