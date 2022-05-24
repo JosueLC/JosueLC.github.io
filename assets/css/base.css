@@ -1,10 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,700&display=swap');
+/*
+    Project CSS Structure
 
+        1. Size
+        2. Display
+        3. Position
+        4. Spacing
+        5. Alignment
+        6. Background
+        7. Border
+        8. Shadow
+        9. Font
+
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,700&family=Open+Sans:ital,wght@0,300;0,500;1,700&display=swap');
 
 :root {
-    --soft-gray-color: #222528;
-    --main-green-color: #386638;
+    --just-white: #f0f3f6;
+    --light-gray: #d2d5d8;
+    --soft-gray: #626568;
+    --dark-gray: #393c3f;
+    --main-green: #386638;
 }
 * {
     margin: 0;
@@ -15,6 +33,7 @@ html {
     font-size: 62.5%;
 }
 body {
+    background-color: var(--soft-gray);
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
     font-weight: 300;
