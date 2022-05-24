@@ -13,7 +13,6 @@
 
 */
 
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,700&family=Open+Sans:ital,wght@0,300;0,500;1,700&display=swap');
 
@@ -22,7 +21,7 @@
     --light-gray: #d2d5d8;
     --soft-gray: #626568;
     --dark-gray: #393c3f;
-    --main-green: #386638;
+    --darker-gray: #1f1510;
 }
 * {
     margin: 0;
@@ -34,7 +33,7 @@ html {
 }
 body {
     background-color: var(--soft-gray);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.6rem;
