@@ -1,0 +1,53 @@
+/* Import file base.css */
+@import "base.css";
+
+.nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    list-style: none;
+    margin: 0 5px;
+}
+.nav__item {
+    margin-right: 5px;
+}
+.link{
+    font-size: 1.1rem;
+    margin: 0;
+}
+.selected {
+    font-weight: 700;
+    color: #b0b07f;
+}
+.link:active {
+    color: #3fffff;
+}
+.link:hover{
+    font-weight: 700;
+}
+.article {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 2%;
+    align-items: center;
+}
+.article__title {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+.article__img {
+    width: 96%;
+    max-width: 590px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.article__text {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    font-weight: 400;
+    text-align: justify;
+}
