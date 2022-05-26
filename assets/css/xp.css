@@ -17,10 +17,10 @@
 }
 .selected {
     font-weight: 700;
-    color: #b0b07f;
+    color: var(--light-yellow);
 }
 .link:active {
-    color: #3fffff;
+    color: var(--deep-yellow);
 }
 .link:hover{
     font-weight: 700;

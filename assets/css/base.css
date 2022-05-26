@@ -17,11 +17,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,700&family=Open+Sans:ital,wght@0,300;0,500;1,700&display=swap');
 
 :root {
-    --just-white: #f0f3f6;
-    --light-gray: #d2d5d8;
-    --soft-gray: #626568;
-    --dark-gray: #393c3f;
-    --darker-gray: #1f1510;
+    --light-blue: #8ECAE6;
+    --soft-blue: #219EBC;
+    --deep-blue: #023047;
+    --light-yellow: #FFB703;
+    --deep-yellow: #FB8500;
 }
 * {
     margin: 0;
@@ -32,7 +32,7 @@ html {
     font-size: 62.5%;
 }
 body {
-    background-color: var(--soft-gray);
+    background-color: var(--deep-blue);
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
     font-weight: 300;
@@ -53,12 +53,16 @@ a {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    color: var(--light-gray);
+    color: var(--light-blue);
 }
 .footer {
     width: 100%;
-    background-color: var(--light-gray);
+    background-color: var(--soft-blue);
     padding: 0 20px;
+}
+.footer .text__content {
+    font-weight: 700;
+    color: var(--deep-blue);
 }
 .text-container {
     width: 100%;
@@ -93,11 +97,11 @@ a {
     list-style: none;
 }
 .link {
-    margin: 0 5px;
+    margin-right: 15px;
     font-size: 1.8rem;
     line-height: 2rem;
     font-weight: 300;
-    color: var(--light-gray);
+    color: var(--soft-blue);
     cursor: pointer;
 }
 .link:hover {
