@@ -21,6 +21,7 @@
     --soft-blue: #219EBC;
     --deep-blue: #023047;
     --light-yellow: #FFB703;
+    --light-yellow-transparent: #FFB70330;
     --deep-yellow: #FB8500;
 }
 * {
@@ -111,7 +112,7 @@ a {
     width: 50px;
     height: 50px;
     display: block;
-    margin-right: 10px;
+    margin: 0 10px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
