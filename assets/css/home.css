@@ -1,9 +1,6 @@
 /* Import file base.css */
 @import "base.css";
 
-.header {
-    width: 100%;
-}
 .hero {
     width: 100%;
     max-width: 700px;
@@ -30,72 +27,11 @@
     margin-left: 5%;
     font-size: 3rem;
 }
-.main {
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    color: var(--light-gray);
-}
-.text-container {
-    width: 100%;
-    max-width: 700px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
-.text__title {
-    margin-bottom: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 2.5rem;
-    font-weight: 700;
-}
-.text__content {
-    margin-bottom: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 1.8rem;
-    line-height: 2rem;
-    font-weight: 300;
-    text-align: justify;
-}
-.text__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-}
-.link {
-    margin: 0 5px;
-    font-size: 1.8rem;
-    line-height: 2rem;
-    font-weight: 300;
-    color: var(--light-gray);
-    cursor: pointer;
-}
-.link:hover {
-    font-weight: 500;
-}
 .profile {
     margin: 10px 2%;
 }
 .experience {
     margin: 10px 2%;
-}
-.icon {
-    width: 50px;
-    height: 50px;
-    display: block;
-    margin-right: 10px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .icon--mail {
     background-image: url("../icons/mail.svg");
@@ -105,9 +41,4 @@
 }
 .icon--git {
     background-image: url("../icons/github.svg");
-}
-.footer {
-    width: 100%;
-    background-color: var(--light-gray);
-    padding: 0 20px;
 }
