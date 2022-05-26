@@ -19,13 +19,14 @@
     margin-left: 5%;
     padding: 15px 0;
     font-size: 4rem;
-    color: var(--darker-gray);
+    color: var(--deep-blue);
 }
 .hero__subtitle {
     height: 50px;
     padding: 15px 0;
     margin-left: 5%;
     font-size: 3rem;
+    color: var(--deep-blue);
 }
 .profile {
     margin: 10px 2%;
