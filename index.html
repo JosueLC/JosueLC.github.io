@@ -8,62 +8,78 @@
     <title>Josue Lopez's Portfolio</title>
 </head>
 <body>
-    <header>
-        <div class="hero--container">
-            <div class="hero-text">
-                <h1>Josue Lopez</h1>
-                <h2>Web Developer</h2>
-            </div>
+    <header class="header">
+        <div class="hero">
+            <h1 class="hero__title">Josue Lopez</h1>
+            <h2 class="hero__subtitle">Software Developer</h2>
         </div>
     </header>
-    <main>
-        <section class="profile--container">
-            <div class="profile--text">
-                <h3>Profile</h3>
-                <p>
-                    I'm an electronic engineer with 15 years of experience in industrial automation.<br/>I like programming and technology.
-                    I like to learn new technologies and improve my skills.<br/>I have knowledge and experience in programming with Python, Java, C++, C#, PHP, HTML, CSS and Javascript.
+    <main class="main">
+        <section class="profile">
+            <div class="text-container">
+                <h3 class="text__title">Profile</h3>
+                <p class="text__content">
+                    I'm an electronic engineer with 15 years of experience in industrial automation. I like programming and technology.
+                    I like to learn new technologies and improve my skills. I have knowledge and experience in programming with Python, Java, C++, C#, PHP, HTML, CSS and Javascript.
                 </p>
-                <p>Soy un ingeniero electrónico con 15 años de experiencia en automatización industrial.<br/>Me encanta la programación
-                    y la tecnología. Me gusta aprender nuevas tecnologías y mejorar mis habilidades.<br/>También tengo conocimiento y experiencia en programación con Python, Java, C++, C#, PHP, HTML, CSS y Javascript.
+                <p class="text__content">
+                    Soy un ingeniero electrónico con 15 años de experiencia en automatización industrial. Me encanta la programación
+                    y la tecnología. Me gusta aprender nuevas tecnologías y mejorar mis habilidades.
+                    También tengo conocimiento y experiencia en programación con Python, Java, C++, C#, PHP, HTML, CSS y Javascript.
                 </p>
             </div>
         </section>
-        <section class="experience-links--container">
-            <div class="experience-links--text">
-                <h3>Skills and Experience</h3>
-                <ul>
+        <section class="experience">
+            <div class="text-container">
+                <h3 class="text__title">
+                    Skills and Experience
+                </h3>
+                <ul class="text__list">
                     <!-- industrial automation -->
-                    <li><a href="./xp/industrial/index.html" target="">Industrial Automation</a></li>
+                    <li>
+                        <a class="link" href="./xp/industrial/index.html" target="">
+                            Industrial Automation
+                        </a>
+                    </li>
                     <!-- web development -->
-                    <li><a href="./xp/web/index.html" target="">Web Development</a></li>
+                    <li>
+                        <a class="link" href="./xp/web/index.html" target="">
+                            Web Development
+                        </a>
+                    </li>
                     <!-- data engineering -->
-                    <li><a href="./xp/data/index.html" target="">Data Engineering</a></li>
+                    <li>
+                        <a class="link" href="./xp/data/index.html" target="">
+                            Data Engineering
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section>
-        <section class="contact--container">
-            <div class="contact--text">
-                <h3>Contact</h3>
-                <!-- mail icon with link to gmail account -->
-                <a href="mailto: josueflopez@gmail.com" target="_blank">
-                    <img src="./assets/icons/mail.svg" alt="mail icon" class="contact-icon">
-                </a>
-                <!-- linkedin icon with link to linkedin account -->
-                <a href="https://www.linkedin.com/in/josue-lopez-carvajal/" target="_blank">
-                    <img src="./assets/icons/linkedin.svg" alt="linkedin icon" class="contact-icon">
-                </a>
-                <!-- github icon with link to github account -->
-                <a href="https://github.com/JosueLC" target="_blank">
-                    <img src="./assets/icons/github.svg" alt="github icon" class="contact-icon">
-                </a>
+        <section class="contact">
+            <div class="text-container">
+                <h3 class="text__title">
+                    Contact
+                </h3>
+                <ul class="text__list">
+                    <li>
+                        <!-- mail icon with link to gmail account -->
+                        <a class="link icon icon--mail" href="mailto: josueflopez@gmail.com" target="_blank"></a>
+                    </li>
+                    <li>
+                        <!-- linkedin icon with link to linkedin account -->
+                        <a class="link icon icon--linked" href="https://www.linkedin.com/in/josue-lopez-carvajal/" target="_blank"></a>
+                    </li>
+                    <li>
+                        <!-- github icon with link to github account -->
+                        <a class="link icon icon--git" href="https://github.com/JosueLC" target="_blank"></a>
+                    </li>
+                </ul>
             </div>
     </main>
-    <footer>
-        <div class="footer--container">
-            <div class="footer--text">
-                <p>&copy; Josue Lopez</p>
-            </div>
+    <footer class="footer">
+        <div class="text__content">
+            <p>&copy; Josue Lopez</p>
         </div>
     </footer>
 </body>

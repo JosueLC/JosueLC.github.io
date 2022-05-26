@@ -8,30 +8,44 @@
     <title>Web Development Experience</title>
 </head>
 <body>
-    <header class="header-container">
-        <div class="header-home">
-            <a href="index.html">
-                <img src="images/logo.png" alt="logo">
-            </a>
-        </div>
-        <div class="header-nav-container">
-            <nav class="header-nav">
-                <ul class="header-nav-list">
-                    <li class="header-nav-list--item"><a href="../../index.html">Home</a></li>
-                    <li class="header-nav-list--item"><a href="../industrial/index.html">Industrial Automation</a></li>
-                    <li class="header-nav-list--item"><a href="../data/index.html">Data Engineering</a></li>
+    <header class="header">
+        <div class="header__container">
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="link" href="../../index.html" class="link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="link" href="../industrial/index.html">
+                            Industrial Automation
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="link selected" href="../web/index.html">
+                            Web Development
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="link" href="../data/index.html">
+                            Data Engineering
+                        </a>
+                    </li>
                 </ul>
             </nav>
     </header>
-    <main class="main-container">
-        <div class="main-title-container">
-            <h1>Web Development Experience</h1>
+    <main class="main">
+        <div class="text-container">
+            <h1 class="text__title">
+                Web Development Experience
+            </h1>
         </div>
-        <section class="main-section-container">
-            <article class="article-card-container">
-                <h2 class="article-card-title">Providencia Factory Information Service</h2>
-                <img src="" alt="PCS 7 Control Picture">
-                <p class="article-card-text">
+        <section class="text-container">
+            <article class="article">
+                <h2 class="article__title">Providencia Factory Information Service</h2>
+                <img class="article__img" src="../../assets/imgs/pcs7.png" alt="PCS 7 Control Picture">
+                <p class="article__text">
                     I'm designed and developed a web application for Providencia's sugar factory.<br/>
                     The website show historical information about the factory's production and the current production status.<br/>
                     The website is developed using PHP, HTML, CSS, JavaScript and MS SQL.
@@ -40,8 +54,8 @@
         </section>
     </main>
     <footer>
-        <div class="footer--container">
-            <div class="footer--text">
+        <div class="footer">
+            <div class="text__content">
                 <p>&copy; Josue Lopez</p>
             </div>
         </div>

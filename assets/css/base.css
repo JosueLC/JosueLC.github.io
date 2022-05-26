@@ -1,10 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,700&display=swap');
+/*
+    Project CSS Structure
 
+        1. Size
+        2. Display
+        3. Position
+        4. Spacing
+        5. Alignment
+        6. Background
+        7. Border
+        8. Shadow
+        9. Font
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,700&family=Open+Sans:ital,wght@0,300;0,500;1,700&display=swap');
 
 :root {
-    --soft-gray-color: #222528;
-    --main-green-color: #386638;
+    --just-white: #f0f3f6;
+    --light-gray: #d2d5d8;
+    --soft-gray: #626568;
+    --dark-gray: #393c3f;
+    --darker-gray: #1f1510;
 }
 * {
     margin: 0;
@@ -15,6 +32,7 @@ html {
     font-size: 62.5%;
 }
 body {
+    background-color: var(--soft-gray);
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
     font-weight: 300;
@@ -22,4 +40,75 @@ body {
 }
 a {
     text-decoration: none;
+}
+.header {
+    width: 100%;
+}
+.main {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--light-gray);
+}
+.footer {
+    width: 100%;
+    background-color: var(--light-gray);
+    padding: 0 20px;
+}
+.text-container {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.text__title {
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    font-weight: 700;
+}
+.text__content {
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 300;
+    text-align: justify;
+}
+.text__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+.link {
+    margin: 0 5px;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 300;
+    color: var(--light-gray);
+    cursor: pointer;
+}
+.link:hover {
+    font-weight: 500;
+}
+.icon {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }

@@ -1,2 +1,44 @@
 /* Import file base.css */
 @import "base.css";
+
+.hero {
+    width: 100%;
+    max-width: 700px;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url("../imgs/josue_pic.webp");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.hero__title {
+    height: 50px;
+    margin-left: 5%;
+    padding: 15px 0;
+    font-size: 4rem;
+    color: var(--darker-gray);
+}
+.hero__subtitle {
+    height: 50px;
+    padding: 15px 0;
+    margin-left: 5%;
+    font-size: 3rem;
+}
+.profile {
+    margin: 10px 2%;
+}
+.experience {
+    margin: 10px 2%;
+}
+.icon--mail {
+    background-image: url("../icons/mail.svg");
+}
+.icon--linked {
+    background-image: url("../icons/linkedin.svg");
+}
+.icon--git {
+    background-image: url("../icons/github.svg");
+}
