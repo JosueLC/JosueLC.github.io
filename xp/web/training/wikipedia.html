@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../assets/css/wikipedia.css">
+    <title>Wikipedia Clone</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img class="central-text-logo" src="../../../assets/imgs/Wikipedia_wordmark_logo.svg">
+            <span class="central-text-slogan">The Free Encyclopedia</span>
+        </div>
+    </header>
+    <main>
+        <section class="main-languages-container">
+            <div class="main-logo">
+                <img src="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2.png" alt="Wikipedia Logo">
+            </div>
+            <div class="main-languages-container-row row-1-5">
+                <div class="main-languages-links container-left">
+                    <a href="index.html">
+                        <strong>English</strong>
+                        <small>6 458 000+ articles</small>
+                    </a>
+                </div>
+                <div class="main-languages-links container-right">
+                    <a href="index.html">
+                        <strong>Spanish</strong>
+                        <small>1 755 000+ artículos</small>
+                    </a>
+                </div>
+            </div>
+            <div class="main-languages-container-row row-2-4">
+                <div class="main-languages-links container-left">
+                    <a href="index.html">
+                        <strong>Русский</strong>
+                        <small>1 798 000+ статей</small>
+                    </a>
+                </div>
+                <div class="main-languages-links container-right">
+                    <a href="index.html">
+                        <strong>日本語</strong>
+                        <small>1 314 000+ 記事</small>
+                    </a>
+                </div>
+            </div>
+            <div class="main-languages-container-row row-3">
+                <div class="main-languages-links container-left">
+                    <a href="index.html">
+                        <strong>Deutsch</strong>
+                        <small>2 667 000+ Artikel</small>
+                    </a>
+                </div>
+                <div class="main-languages-links container-right">
+                    <a href="index.html">
+                        <strong>Français</strong>
+                        <small>2 400 000+ articles</small>
+                    </a>
+                </div>
+            </div>
+            <div class="main-languages-container-row row-2-4">
+                <div class="main-languages-links container-left">
+                    <a href="index.html">
+                        <strong>中文</strong>
+                        <small>1 256 000+ 條目</small>
+                    </a>
+                </div>
+                <div class="main-languages-links container-right">
+                    <a href="index.html">
+                        <strong>Italiano</strong>
+                        <small>1 742 000+ voci</small>
+                    </a>
+                </div>
+            </div>
+            <div class="main-languages-container-row row-1-5">
+                <div class="main-languages-links container-left">
+                    <a href="index.html">
+                        <strong>Português</strong>
+                        <small>1 085 000+ artigos</small>
+                    </a>
+                </div>
+                <div class="main-languages-links container-right">
+                    <a href="index.html">
+                        <strong>Polski</strong>
+                        <small>1 512 000+ haseł</small>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="search-box">
+            <div class="search-box-container">
+                <input type="text" name="search">
+                <div class="hide-arrow">
+                    <label for="language">EN</label>
+                    <select id="searchLanguage" name="language">
+                        <option value="af" lang="af">Afrikaans</option>
+                        <option value="pl" lang="pl">Polski</option>
+                        <option value="sk" lang="sk">Slovenčina</option><!-- Angličtina -->
+                        <option value="ar" lang="ar">العربية</option><!-- Al-ʿArabīyah -->
+                        <option value="ast" lang="ast">Asturianu</option>
+                        <option value="az" lang="az">Azərbaycanca</option>
+                        <option value="bg" lang="bg">Български</option><!-- Bǎlgarski -->
+                        <option value="nan" lang="nan">Bân-lâm-gú / Hō-ló-oē</option>
+                        <option value="bn" lang="bn">বাংলা</option><!-- Bangla -->
+                        <option value="be" lang="be">Беларуская</option><!-- Belaruskaya -->
+                        <option value="ca" lang="ca">Català</option>
+                        <option value="cs" lang="cs">Čeština</option><!-- čeština -->
+                        <option value="cy" lang="cy">Cymraeg</option><!-- Cymraeg -->
+                        <option value="da" lang="da">Dansk</option>
+                        <option value="de" lang="de">Deutsch</option>
+                        <option value="et" lang="et">Eesti</option>
+                        <option value="el" lang="el">Ελληνικά</option><!-- Ellīniká -->
+                        <option value="en" lang="en" selected="selected">English</option><!-- English -->
+                        <option value="es" lang="es">Español</option>
+                        <option value="eo" lang="eo">Esperanto</option>
+                        <option value="eu" lang="eu">Euskara</option>
+                        <option value="fa" lang="fa">فارسی</option><!-- Fārsi -->
+                        <option value="fr" lang="fr">Français</option>
+                        <option value="gl" lang="gl">Galego</option>
+                        <option value="ko" lang="ko">한국어</option><!-- Hangugeo -->
+                        <option value="hy" lang="hy">Հայերեն</option><!-- Hayeren -->
+                        <option value="hi" lang="hi">हिन्दी</option><!-- Hindī -->
+                        <option value="hr" lang="hr">Hrvatski</option>
+                        <option value="id" lang="id">Bahasa Indonesia</option>
+                        <option value="it" lang="it">Italiano</option>
+                        <option value="he" lang="he">עברית</option><!-- Ivrit -->
+                        <option value="ka" lang="ka">ქართული</option><!-- Kartuli -->
+                        <option value="la" lang="la">Latina</option>
+                        <option value="lv" lang="lv">Latviešu</option>
+                        <option value="lt" lang="lt">Lietuvių</option>
+                        <option value="hu" lang="hu">Magyar</option>
+                        <option value="mk" lang="mk">Македонски</option><!-- Makedonski -->
+                        <option value="arz" lang="arz">مصرى</option><!-- Maṣrī -->
+                        <option value="ms" lang="ms">Bahasa Melayu</option>
+                        <option value="min" lang="min">Bahaso Minangkabau</option>
+                        <option value="nl" lang="nl">Nederlands</option>
+                        <option value="ja" lang="ja">日本語</option><!-- Nihongo -->
+                        <option value="no" lang="nb">Norsk (bokmål)</option>
+                        <option value="nn" lang="nn">Norsk (nynorsk)</option>
+                        <option value="ce" lang="ce">Нохчийн</option><!-- Noxçiyn -->
+                        <option value="uz" lang="uz">Oʻzbekcha / Ўзбекча</option>
+                        <option value="pt" lang="pt">Português</option>
+                        <option value="kk" lang="kk">Қазақша / Qazaqşa / قازاقشا</option>
+                        <option value="ro" lang="ro">Română</option><!-- Română -->
+                        <option value="ru" lang="ru">Русский</option><!-- Russkiy -->
+                        <option value="simple" lang="en">Simple English</option>
+                        <option value="ceb" lang="ceb">Sinugboanong Binisaya</option>
+                        <option value="sl" lang="sl">Slovenščina</option>
+                        <option value="sr" lang="sr">Српски / Srpski</option>
+                        <option value="sh" lang="sh">Srpskohrvatski / Српскохрватски</option>
+                        <option value="fi" lang="fi">Suomi</option><!-- suomi -->
+                        <option value="sv" lang="sv">Svenska</option>
+                        <option value="ta" lang="ta">தமிழ்</option><!-- Tamiḻ -->
+                        <option value="tt" lang="tt">Татарча / Tatarça</option>
+                        <option value="th" lang="th">ภาษาไทย</option><!-- Phasa Thai -->
+                        <option value="tg" lang="tg">Тоҷикӣ</option><!-- Tojikī -->
+                        <option value="azb" lang="azb">تۆرکجه</option><!-- Türkce -->
+                        <option value="tr" lang="tr">Türkçe</option><!-- Türkçe -->
+                        <option value="uk" lang="uk">Українська</option><!-- Ukrayins’ka -->
+                        <option value="ur" lang="ur">اردو</option><!-- Urdu -->
+                        <option value="vi" lang="vi">Tiếng Việt</option>
+                        <option value="vo" lang="vo">Volapük</option>
+                        <option value="war" lang="war">Winaray</option>
+                        <option value="zh-yue" lang="yue">粵語</option><!-- Yuht Yúh / Jyut6 jyu5 -->
+                        <option value="zh" lang="zh">中文</option><!-- Zhōngwén -->
+                        <option value="my" lang="my">မြန်မာဘာသာ</option><!-- Myanmarsar -->
+                    </select>
+                </div>
+            </div>
+            <button type="submit">
+                <img src="../../../assets/icons/search.svg" alt="Search Icon">
+            </button>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

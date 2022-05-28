@@ -11,7 +11,7 @@
 .nav__item {
     margin-right: 5px;
 }
-.link{
+.nav__item .link{
     font-size: 1.1rem;
     margin: 0;
 }
