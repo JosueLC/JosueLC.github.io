@@ -146,7 +146,7 @@ function analizarSalarios(){
         resultados.modaTop10 = calcularModa(top10);
     }
     else {
-        alert("No hay datos para analizar");
+        alert("Without data, there is no analysis");
         resultados = null;
     }
     return resultados;
