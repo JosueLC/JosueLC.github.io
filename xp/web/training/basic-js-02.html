@@ -7,6 +7,7 @@
     <title>Josue Lopez | Curso Práctico de JavaScript</title>
     <link rel="stylesheet" href="../../../assets/css/training_js.css">
     <script src="../../../assets/js/curso-practico.js"></script>
+    <script src="../../../assets/js/salary.js"></script>
 </head>
 <body>
     <header class="header">
@@ -46,53 +47,6 @@
             </p>
         </div>
         <section class="section">
-            <h2 class="text__title">Ejercicio 1: Figuras geométricas</h2>
-            <div class="section-content">
-                <article class="article">
-                    <h3 class="article__title">Cuadrado</h3>
-                    <p>Formulario para calcular el perimetro y el área de un cuadrado.</p>
-                    <form class="form--cuadrado">
-                        <label for="lado" id="cuadLbl">Ingrese el tamaño del lado en cm:</label>
-                        <input type="number" id="cuadLado" name="lado" value="10">
-                        <button type="button" id="cuadBtn" onclick="calcularCuadrado()">Calcular</button>
-                        <p id="cuadPeri">El perímetro del cuadrado es de <span id="cuadPerim"></span> cm.</p>
-                        <p id="cuadAre">El área del cuadrado es de <span id="cuadArea"></span> cm².</p>
-                    </form>
-                </article>
-                <article class="article">
-                    <h3 class="article__title">Triángulo</h3>
-                    <p>Formulario para calcular el perimetro y el área de un triángulo.</p>
-                    <form  class="form--triangulo">
-                        <label for="tLado1" id="tLblLado1">Ingrese el tamaño del lado 1 en cm:</label>
-                        <input type="number" id="tLado1" name="tLado1" value="3">
-                        <label for="tLado2" id="tLblLado2">Ingrese el tamaño del lado 2 en cm:</label>
-                        <input type="number" id="tLado2" name="tLado2" value="4">
-                        <label for="tLado3" id="tLblLado3">Ingrese el tamaño del lado 3 en cm:</label>
-                        <input type="number" id="tLado3" name="tLado3" value="5">
-                        <button type="button" id="triaCalcP" onclick="calcularPerimT()">Calcular Perimetro</button>
-                        <p id="triaPeri">El perímetro del triángulo es de <span id="triaPerim"></span> cm.</p>
-                        <label for="base" id="tLblBase">Ingrese el tamaño de la base en cm:</label>
-                        <input type="number" id="tBase" name="base" value="3">
-                        <label for="altura" id="tLblAlt">Ingrese el tamaño de la altura en cm:</label>
-                        <input type="number" id="tAltura" name="altura" value="4">
-                        <button type="button" id="triaCalcA" onclick="calcularAreaT()">Calcular Area</button>
-                        <p id="triaAre">El área del triángulo es de <span id="triaArea"></span> cm².</p>
-                    </form>
-                </article>
-                <article class="article">
-                    <h3 class="article__title">Círculo</h3>
-                    <p>Formulario para calcular el perimetro y el área de un círculo.</p>
-                    <form class="form--circulo">
-                        <label for="cRadio" id="cRadioLbl">Ingrese el tamaño del radio en cm:</label>
-                        <input type="number" id="cRadio" name="cRadio" value="10">
-                        <button type="button" id="circBtn" onclick="calcularCirculo()">Calcular</button>
-                        <p id="circPeri">El perímetro del círculo es de <span id="circPerim"></span> cm.</p>
-                        <p id="circAre">El área del círculo es de <span id="circArea"></span> cm².</p>
-                    </form>
-                </article>
-            </div>
-        </section>
-        <section class="section">
             <h2 class="text__title">Ejercicio 2: Promedio, Mediana y Moda</h2>
             <div class="section-content">
                 <article class="article">
@@ -122,9 +76,41 @@
                         <label for="modLbl" id="modLbl">Ingrese los números separados por coma:</label>
                         <input type="text" id="modNums" name="modNums">
                         <button type="button" id="modBtn" onclick="calcularModaBtn()">Calcular</button>
-                        <p id="mod">La moda es de <span id="moda"></span>.</p>
+                        <p id="mod">La moda es <span id="moda"></span>.</p>
                     </form>
                 </article>
+                <article class="article">
+                    <h3 class="article__title">Media geométrica</h3>
+                    <p>Formulario para calcular la media geométrica de una lista de números.</p>
+                    <form class="form--media">
+                        <label for="geoLbl" id="geoLbl">Ingrese los números separados por coma:</label>
+                        <input type="text" id="geoNums" name="geoNums">
+                        <button type="button" id="geoBtn" onclick="calcularMedGeoBtn()">Calcular</button>
+                        <p id="geo">La media algebraica es de <span id="medgeo"></span>.</p>
+                </article>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-content">
+                <nav class="nav">
+                    <ul class="ulist">
+                        <li class="uitem">
+                            <a class="link" href="./practice-js.html">
+                                Return
+                            </a>
+                        </li>
+                        <li class="uitem">
+                            <a class="link" href="./basic-js-01.html">
+                                Exercise 1
+                            </a>
+                        </li>
+                        <li class="uitem">
+                            <a class="link" href="./basic-js-03.html">
+                                Exercise 3
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </section>
     </main>
@@ -138,6 +124,7 @@
             document.getElementById("promNums").placeholder = generateRandomArray().join(", ");
             document.getElementById("medNums").placeholder = generateRandomArray().join(", ");
             document.getElementById("modNums").placeholder = generateRandomArray().join(", ");
+            document.getElementById("geoNums").placeholder = generateRandomArray().join(", ");
         }
     </script>
 </body>

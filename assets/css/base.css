@@ -17,12 +17,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,700&family=Open+Sans:ital,wght@0,300;0,500;1,700&display=swap');
 
 :root {
-    --light-blue: #8ECAE6;
-    --soft-blue: #219EBC;
-    --deep-blue: #023047;
-    --light-yellow: #FFB703;
-    --light-yellow-transparent: #FFB70330;
-    --deep-yellow: #FB8500;
+    --first-color: #8ECAE6;
+    --second-color: #219EBC;
+    --third-color: #023047;
+    --fourth-color: #FFB703;
+    --fourth-color-transparent: #FFB70330;
+    --fifth-color: #FB8500;
 }
 * {
     margin: 0;
@@ -33,7 +33,7 @@ html {
     font-size: 62.5%;
 }
 body {
-    background-color: var(--deep-blue);
+    background-color: var(--third-color);
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
     font-weight: 300;
@@ -53,16 +53,16 @@ a {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    color: var(--light-blue);
+    color: var(--first-color);
 }
 .footer {
     width: 100%;
-    background-color: var(--soft-blue);
+    background-color: var(--second-color);
     padding: 0 20px;
 }
 .footer .text__content {
     font-weight: 700;
-    color: var(--deep-blue);
+    color: var(--third-color);
 }
 .text-container {
     width: 100%;
@@ -112,18 +112,18 @@ a {
 }
 .selected {
     font-weight: 700;
-    color: var(--light-yellow);
+    color: var(--fourth-color);
 }
 .link {
     margin-right: 15px;
     font-size: 1.8rem;
     line-height: 2rem;
     font-weight: 300;
-    color: var(--soft-blue);
+    color: var(--second-color);
     cursor: pointer;
 }
 .link:active {
-    color: var(--deep-yellow);
+    color: var(--fifth-color);
 }
 .link:hover{
     font-weight: 700;

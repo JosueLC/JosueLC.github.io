@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josue Lopez | Curso Práctico de JavaScript</title>
+    <link rel="stylesheet" href="../../../assets/css/training_js.css">
+    <script src="../../../assets/js/curso-practico.js"></script>
+    <script src="../../../assets/js/salary.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="link" href="../../../index.html" class="link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="link" href="../../industrial/index.html">
+                            Industrial Automation
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="link selected" href="../index.html">
+                            Web Development
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="link" href="../../data/index.html">
+                            Data Engineering
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="text-container">
+            <h1 class="text__title">Curso Práctico de JavaScript</h1>
+            <p class="text__content">
+                Workout of JavaScript from  
+                <b><a href="https://platzi.com/cursos/javascript-practico/">Platzi's course</a></b>.
+            </p>
+        </div>
+        <section class="section">
+            <h2 class="text__title">Exercise 1: Geometric Shapes</h2>
+            <div class="section-content">
+                <article class="article">
+                    <h3 class="article__title">Square</h3>
+                    <p>Form to calculate perimeter and area from a square.</p>
+                    <form class="form--cuadrado">
+                        <label for="lado" id="cuadLbl">Enter size of side in cm:</label>
+                        <input type="number" id="cuadLado" name="lado" value="10">
+                        <button type="button" id="cuadBtn" onclick="calcularCuadrado()">Calculate</button>
+                        <p id="cuadPeri">Square's perimeter: <span id="cuadPerim"></span> cm.</p>
+                        <p id="cuadAre">Square's area: <span id="cuadArea"></span> cm².</p>
+                    </form>
+                </article>
+                <article class="article">
+                    <h3 class="article__title">Triangle</h3>
+                    <p>Form to calculate perimeter and area from a triangle.</p>
+                    <form  class="form--triangulo">
+                        <label for="tLado1" id="tLblLado1">Enter size of side 1 in cm:</label>
+                        <input type="number" id="tLado1" name="tLado1" value="3">
+                        <label for="tLado2" id="tLblLado2">Enter size of side 2 in cm:</label>
+                        <input type="number" id="tLado2" name="tLado2" value="4">
+                        <label for="tLado3" id="tLblLado3">Enter size of side 3 in cm:</label>
+                        <input type="number" id="tLado3" name="tLado3" value="5">
+                        <button type="button" id="triaCalcP" onclick="calcularPerimT()">Calculate Perimeter</button>
+                        <p id="triaPeri">The triangle's perimeter is <span id="triaPerim"></span> cm.</p>
+                        <label for="base" id="tLblBase">Enter size of base in cm:</label>
+                        <input type="number" id="tBase" name="base" value="3">
+                        <label for="altura" id="tLblAlt">Enter size of height in cm:</label>
+                        <input type="number" id="tAltura" name="altura" value="4">
+                        <button type="button" id="triaCalcA" onclick="calcularAreaT()">Calculate Area</button>
+                        <p id="triaAre">The triangle's area is <span id="triaArea"></span> cm².</p>
+                    </form>
+                </article>
+                <article class="article">
+                    <h3 class="article__title">Circle</h3>
+                    <p>Form to calculate perimeter and area from a circle.</p>
+                    <form class="form--circulo">
+                        <label for="cRadio" id="cRadioLbl">Enter radius size in cm:</label>
+                        <input type="number" id="cRadio" name="cRadio" value="10">
+                        <button type="button" id="circBtn" onclick="calcularCirculo()">Calculate</button>
+                        <p id="circPeri">The circle's perimeter is <span id="circPerim"></span> cm.</p>
+                        <p id="circAre">The area's circle is <span id="circArea"></span> cm².</p>
+                    </form>
+                </article>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-content">
+                <nav class="nav">
+                    <ul class="ulist">
+                        <li class="uitem">
+                            <a class="link" href="./practice-js.html">
+                                Return
+                            </a>
+                        </li>
+                        <li class="uitem">
+                            <a class="link" href="./basic-js-02.html">
+                                Exercise 2
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div>
+            <p class="text__content">&copy; Josue Lopez</p>
+        </div>
+    </footer>
+</body>
+</html>
