@@ -1,0 +1,240 @@
+@import "base.css";
+
+.header .text__title {
+    color: var(--first-color);
+}
+.header .text__content, a {
+    color: var(--first-color);
+}
+.section {
+    width: 100%;
+}
+.section .section-content {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.article{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin: 2px;
+    padding: 10px;
+    text-align: justify;
+    border: 1px solid var(--first-color);
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 2px #8ECAE660;
+}
+.article__title {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--fourth-color);
+}
+.article form{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr minmax(100px, 1fr);
+    grid-auto-rows: 40px;
+    align-items: center;
+}
+.article form label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 5px;
+}
+.article form input {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid var(--first-color);
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 2px #8ECAE660;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+.article form button {
+    margin: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid var(--first-color);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: var(--fourth-color);
+    color: var(--third-color);
+    box-shadow: 2px 2px 10px 2px #8ECAE660;
+}
+.article p {
+    margin: 10px 0;
+}
+.article ul li {
+    margin-bottom: 5px;
+    margin-left: 20px;
+    list-style: none;
+}
+.section .nav {
+    display: flex;
+    max-width: 400px;
+    margin-top: 20px;
+    justify-content: center;
+}
+.ulist {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    list-style: none;
+}
+.ulist.column {
+    flex-direction: column;
+}
+.uitem {
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* Ejercicio 1 */
+#cuadLbl {
+    grid-area: 1/1/2/4;
+}
+#cuadLado {
+    grid-area: 2/1/3/3;
+}
+#cuadBtn {
+    grid-area: 2/3/3/4;
+}
+#cuadPeri {
+    grid-area: 3/1/4/4;
+}
+#cuadAre {
+    grid-area: 4/1/5/4;
+}
+#tLblLado1 {
+    grid-area: 1/1/2/3;
+}
+#tLblLado2 {
+    grid-area: 2/1/3/3;
+}
+#tLblLado3 {
+    grid-area: 3/1/4/3;
+}
+#triaCalcP {
+    grid-area: 4/1/5/4;
+}
+#triaPeri {
+    grid-area: 5/1/6/4;
+}
+#tLblBase {
+    grid-area: 6/1/7/3;
+}
+#base {
+    grid-area: 6/3/7/4;
+}
+#tLblAlt {
+    grid-area: 7/1/8/3;
+}
+#altura {
+    grid-area: 7/3/8/4;
+}
+#triaCalcA {
+    grid-area: 8/1/9/4;
+}
+#triaAre {
+    grid-area: 9/1/10/4;
+}
+#cRadioLbl {
+    grid-area: 1/1/2/4;
+}
+#cRadio {
+    grid-area: 2/1/3/3;
+}
+#circPeri {
+    grid-area: 3/1/4/4;
+}
+#circAre {
+    grid-area: 4/1/5/4;
+}
+/* Ejercicio 2 */
+#promLbl {
+    grid-area: 1/1/2/4;
+}
+#promNums {
+    grid-area: 2/1/3/4;
+}
+#promBtn {
+    grid-area: 3/1/4/4;
+}
+#prom {
+    grid-area: 4/1/5/4;
+}
+#medLbl {
+    grid-area: 1/1/2/4;
+}
+#medNums {
+    grid-area: 2/1/3/4;
+}
+#medBtn {
+    grid-area: 3/1/4/4;
+}
+#med {
+    grid-area: 4/1/5/4;
+}
+#modLbl {
+    grid-area: 1/1/2/4;
+}
+#modNums {
+    grid-area: 2/1/3/4;
+}
+#modBtn {
+    grid-area: 3/1/4/4;
+}
+#mod {
+    grid-area: 4/1/5/4;
+}
+#geoLbl {
+    grid-area: 1/1/2/4;
+}
+#geoNums {
+    grid-area: 2/1/3/4;
+}
+#geoBtn {
+    grid-area: 3/1/4/4;
+}
+#geo {
+    grid-area: 4/1/5/4;
+}
+/* Ejercicio 3 */
+#nameLbl {
+    grid-area: 1/1/2/3;
+}
+#name {
+    grid-area: 1/3/2/4;
+}
+#salarioLbl {
+    grid-area: 2/1/3/3;
+}
+#salario {
+    grid-area: 2/3/3/4;
+}
+#salarioBtn {
+    grid-area: 3/1/4/4;
+}
+#dataLbl {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#salarioTable {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+}
+#salarioTable thead tr {
+    color: var(--fourth-color);
+}
+#salarioTable tbody tr:nth-child(even) {
+    background-color: var(--second-color);
+}
+#evalBtn {
+    grid-area: 1/1/2/4;
+}

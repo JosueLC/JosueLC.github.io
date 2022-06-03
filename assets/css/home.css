@@ -43,3 +43,7 @@
 .icon--git {
     background-image: url("../icons/github.svg");
 }
+.icon:hover {
+    width: 55px;
+    height: 55px;
+}

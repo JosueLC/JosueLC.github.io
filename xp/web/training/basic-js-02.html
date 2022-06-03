@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josue Lopez's Portfolio | JavaScript Practical Course</title>
+    <link rel="stylesheet" href="../../../assets/css/training_js.css">
+    <script src="../../../assets/js/curso-practico.js"></script>
+    <script src="../../../assets/js/salary.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="link" href="../../../index.html" class="link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="link" href="../../industrial/index.html">
+                            Industrial Automation
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="link selected" href="../index.html">
+                            Web Development
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="link" href="../../data/index.html">
+                            Data Engineering
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="text-container">
+            <h1 class="text__title">JavaScript Practical Course</h1>
+            <p class="text__content">
+                JavaScript exercises from 
+                <b><a href="https://platzi.com/cursos/javascript-practico/">Platzi's course</a></b>.
+            </p>
+        </div>
+        <section class="section">
+            <h2 class="text__title">Exercise 2: mean, median and mode</h2>
+            <div class="section-content">
+                <article class="article">
+                    <h3 class="article__title">Mean</h3>
+                    <p>Form to calculate the mean of a list of numbers.</p>
+                    <form class="form--promedio">
+                        <label for="promLbl" id="promLbl">Enter the numbers separated by commas:</label>
+                        <input type="text" id="promNums" name="promNums">
+                        <button type="button" id="promBtn" onclick="calcularPromedioBtn()">Calculate</button>
+                        <p id="prom">The mean of the numbers is <span id="promedio"></span>.</p>
+                    </form>
+                </article>
+                <article class="article">
+                    <h3 class="article__title">Mediana</h3>
+                    <p>Form to calculate the median of a list of numbers.</p>
+                    <form class="form--mediana">
+                        <label for="medLbl" id="medLbl">Enter the numbers separated by commas:</label>
+                        <input type="text" id="medNums" name="medNums">
+                        <button type="button" id="medBtn" onclick="calcularMedianaBtn()">Calculate</button>
+                        <p id="med">The median of the numbers is <span id="mediana"></span>.</p>
+                    </form>
+                </article>
+                <article class="article">
+                    <h3 class="article__title">Mode</h3>
+                    <p>Form to calculate the mode of a list of numbers.</p>
+                    <form class="form--moda">
+                        <label for="modLbl" id="modLbl">Enter the numbers separated by commas:</label>
+                        <input type="text" id="modNums" name="modNums">
+                        <button type="button" id="modBtn" onclick="calcularModaBtn()">Calculate</button>
+                        <p id="mod">The mode of the numbers is <span id="moda"></span>.</p>
+                    </form>
+                </article>
+                <article class="article">
+                    <h3 class="article__title">Geometric mean</h3>
+                    <p>Form to calculate the geometric mean of a list of numbers.</p>
+                    <form class="form--media">
+                        <label for="geoLbl" id="geoLbl">Enter the numbers separated by commas:</label>
+                        <input type="text" id="geoNums" name="geoNums">
+                        <button type="button" id="geoBtn" onclick="calcularMedGeoBtn()">Calculate</button>
+                        <p id="geo">The geometric mean of the list of numbers is<span id="medgeo"></span>.</p>
+                </article>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-content">
+                <nav class="nav">
+                    <ul class="ulist">
+                        <li class="uitem">
+                            <a class="link" href="./practice-js.html">
+                                Return
+                            </a>
+                        </li>
+                        <li class="uitem">
+                            <a class="link" href="./basic-js-01.html">
+                                Exercise 1
+                            </a>
+                        </li>
+                        <li class="uitem">
+                            <a class="link" href="./basic-js-03.html">
+                                Exercise 3
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div>
+            <p class="text__content">&copy; Josue Lopez</p>
+        </div>
+    </footer>
+    <script>
+        window.onload = () => {
+            document.getElementById("promNums").placeholder = generateRandomArray().join(", ");
+            document.getElementById("medNums").placeholder = generateRandomArray().join(", ");
+            document.getElementById("modNums").placeholder = generateRandomArray().join(", ");
+            document.getElementById("geoNums").placeholder = generateRandomArray().join(", ");
+        }
+    </script>
+</body>
+</html>
